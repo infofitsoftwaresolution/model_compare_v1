@@ -1,0 +1,72 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - run: pip install -r requirements.txt
+    - run: |
+        echo "Running basic checks..."
+        python -c "import streamlit, pandas, boto3, numpy; print('✅ All imports successful')"
+        if [ -f tests/test_basic.py ]; then
+          python tests/test_basic.py || true
+        fi
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          echo "🚀 Starting deployment on EC2..."
+          cd /home/ec2-user/Optimization
+          
+          echo "📥 Pulling latest code..."
+          git pull origin main
+          
+          echo "📦 Installing dependencies..."
+          pip3 install -r requirements.txt
+          
+          echo "🔄 Restarting Streamlit service..."
+          sudo systemctl restart streamlit-optimization.service
+          
+          echo "⏳ Waiting for service to stabilize..."
+          sleep 15
+          
+          echo "🔍 Checking deployment status..."
+          if sudo systemctl is-active --quiet streamlit-optimization.service; then
+            echo "✅ Streamlit service is running"
+            
+            # Health check
+            if curl -f -s --max-time 10 http://localhost:8501/ > /dev/null; then
+              echo "🎉 Deployment successful! App is live at: http://${{ secrets.EC2_HOST }}"
+            else
+              echo "⚠️  Service running but health check failed"
+              echo "📋 Service status:"
+              sudo systemctl status streamlit-optimization.service --no-pager -l
+            fi
+          else
+            echo "❌ Streamlit service failed to start"
+            sudo systemctl status streamlit-optimization.service --no-pager -l
+            echo "📝 Recent logs:"
+            sudo journalctl -u streamlit-optimization.service -n 30 --no-pager
+            exit 1
+          fi

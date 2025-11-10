@@ -1,0 +1,79 @@
+name: Deploy to EC2 (Systemd)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - run: pip install -r requirements.txt
+    - run: |
+        echo "Running basic checks..."
+        python -c "import streamlit, pandas, boto3, numpy; print('All imports successful')"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /home/ec2-user/Optimization
+          
+          echo "📥 Pulling latest changes..."
+          git pull origin main
+          
+          echo "📦 Installing dependencies..."
+          pip3 install -r requirements.txt
+          
+          echo "🔄 Restarting Streamlit service..."
+          # Use systemd if available, otherwise fall back to manual
+          if systemctl is-enabled streamlit-optimization.service > /dev/null 2>&1; then
+            echo "Using systemd service..."
+            sudo systemctl restart streamlit-optimization.service
+            sleep 5
+            sudo systemctl status streamlit-optimization.service --no-pager -l
+          else
+            echo "Systemd service not found, using manual deployment..."
+            pkill -f "streamlit run" || true
+            sleep 3
+            export PATH="$HOME/.local/bin:$PATH"
+            nohup python3 -m streamlit run src/dashboard.py \
+              --server.port 8501 \
+              --server.address 0.0.0.0 \
+              --server.headless true \
+              --server.runOnSave false \
+              --browser.serverAddress 0.0.0.0 \
+              --browser.gatherUsageStats false \
+              > dashboard.log 2>&1 &
+            sleep 10
+          fi
+          
+          # Verify it's running
+          if pgrep -f "streamlit run" > /dev/null; then
+            echo "✅ Streamlit is running!"
+            echo "PID: $(pgrep -f 'streamlit run' | head -1)"
+          else
+            echo "❌ Streamlit failed to start"
+            exit 1
+          fi
+          
+          echo "✅ Deployment completed!"
+          echo "🌐 App: http://${{ secrets.EC2_HOST }}:8501"
+

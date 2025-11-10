@@ -1,0 +1,1859 @@
+prompt_id,prompt,expected_json,category
+1,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""For \""COMSUPFACE\"" or \""CSAFACE\"" service codes, is there evidence the service was provided face-to-face with the client  or guardian or via telehealth?"",""LinkId"":""01K6372DCE7PF23SCEY2TTSS3T""},{""Question"":""For \""CSFACEYTH\"" service codes, is there evidence the service was provided face-to-face with the client, parent, guardian, or school personnel?"",""LinkId"":""01K6372KX0EKX7M13JDVMBZQ05""},{""Question"":""For \""Community Support Face to Face Youth\"" service codes, is there evidence the service was provided face-to-face with the client, parent, guardian, or school personnel?"",""LinkId"":""01K6372V4A6TNJFS4FRMR3GSFP""},{""Question"":""For \""FSFACE\"" service codes, is there evidence the service was provided face-to-face with the parent or  guardian or via telehealth?"",""LinkId"":""01K63732P6716X90ANN7WH0TJT""},{""Question"":""For \""Family Support Face to Face\"" service codes, is there evidence the service was provided face-to-face with the parent or  guardian or via telehealth?"",""LinkId"":""01K6373DBNDCMGQTAZJSXXQ0RA""},{""Question"":""Was the note documented using the SIRP (Situation, Intervention Response, Plan) template? If not, was DLA completed?"",""LinkId"":""01K6373MQNG8MSM34XE8GYK57X""},{""Question"":""In the situation, was the purpose of the appointment described? If a DLA was completed, this can be marked as Not Applicable."",""LinkId"":""01K6378A8CH81S32DJWR5VR0QX""},{""Question"":""Excluding the Columbia Assessment, if health needs were identified, were health related interventions provided?  If a DLA was completed, this can be marked as Not Applicable."",""LinkId"":""01K6378H4FEGKFWEP6D78F1J23""},{""Question"":""For \""IDDT\"" services, was substance use addressed in the intervention? If it was not an \""IDDT\"" service, this question should be marked as success."",""LinkId"":""01K6378PEVXVMNYJ3HZEVCN1JE""},{""Question"":""Was the treatment plan objective supported by the intervention?   If a DLA was completed, this can be marked as Not Applicable."",""LinkId"":""01K6378VKK7BE0CXBNB581JFD9""}]
+
+Progress Note:
+Beacon Mental Health
+
+  Date Created:  09/30/2025 1:01 PM
+ Form Name:  Ambulatory Progress Note w/Columbia Assessment
+ Client's Name:  FINE, LORA, A (2594)
+ Client's DOB:  10/28/1964
+ 
+
+  Beacon Mental Health 
+
+ 3100 NE 83rd St Ste 1001
+
+ Kansas City, MO 64119-4460
+
+ 
+
+ 
+
+  Client:    Name:  LORA A FINE
+ MRN:  2594
+ Age:  60y
+ Gender:  Female
+ DOB:  10/28/1964
+ 
+
+ 
+ Practitioner:  LARRY LAUVETZ
+ 
+
+  Location:  Other (99)
+ Service Charge Code:  Community Support face to face (COMSUPFACE)
+ Service Program:  CPRP Adult (CPSADULT-C)
+ myAvatar Note Type:  Tri-County Progress Note
+ 
+
+  Draft/Final:  Final
+ Session Date/Time:   09/26/2025 12:55 PM  -  2:59 PM 
+ 
+
+ Ambulatory Progress Note w/Columbia Assessment
+
+  Narrative
+
+ TRAVEL TIME: 0/2:46-2:59 (onto a therapy client)
+TIME DEDUCTED (IF NEEDED): 5 min for her Xray (actual end time was 3:04)
+SITUATION: Lora had a follow up appt with Dr. Tag on this date as she had broken her L upper arm several weeks ago.
+INTERVENTION: Writer escorted Lora from the day program to KC Ortho Clinic for her 1:20 appt. On the way, we discussed how well Lora has been doing and how this appt should be quite easy. Writer and Lora then arrived the clinic and writer assisted Lora with signing in and filling out the required paperwork. Writer and Lora then waited until her name was called which it eventually was. Lora met with the nurse and then she was escorted to get an Xray of her arm. Dr. Tag's PA then met with us and stated that she is ""doing great"" and she should keep up her physical therapy (which she does at the day program). Writer and Lora then made another follow up appt for 6 weeks and then departed. Writer escorted Lora home and then departed. 
+RESPONSE: Lora was in a good mood and stated that she is glad that she does not have to wear her sling any longer and she can do more physical exercises. Lora was happy that her arm is healing like it should and she had no other concerns on this date. Lora was very appreciative for the assistance on this day.
+PLAN: Lora will continue to come to day program every day and writer will assist with medical appts as they arise.
+
+
+ 
+
+  Goals
+
+ Problems-> Paranoid schizophrenia
+Goals-> ""I would like to keep going to day program and stay busy, keep coloring. I want to stay away from people that cause problems.""
+Objectives-> Lora will follow up on physical health by attending PCP appointments monthly and going to specialists if needed. She will complete eye exam by end of October of 2025. She will stay up to date with routine exams. She will take care of hearing aids and wear them daily. She will inform CM if needing to meet with audiologist due to any concerns that arise.
+Interventions-> PCP/Specialists will offer medication management and treatment recommendations. Case Worker will assist client by encouraging her to speak up about any concerns she is having. CM will provide support for client utilizing hearing aids and ensure she is able to communicate concerns effectively.
+
+ 
+
+  Form
+
+ Columbia Assessment
+
+ 1. In the past month, have you wished you were dead or wished you could go to sleep and not wake up?: Not Assessed
+
+ Comments: Lora has never displayed SI as long as I have known her (18 yrs)
+
+ 2. In the past month, have you actually had any thoughts about killing yourself?: Not Assessed
+
+ 6. In the past 3 months, have you done anything, started to do anything, or prepared to do anything to end your life?: Not Assessed
+
+ Is this an In-person visit?: Yes
+
+ 
+
+   Electronically Signed by: LARRY LAUVETZ, LPC
+
+Additional Information:
+
+",True,converse
+2,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did staff outline follow-up activities based on the events described in the service?"",""LinkId"":""01K4NTS2RNHP6TJKPKGR9MHQQ1""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telephone or Telephone Call Back, Did the selected Location include Telephone?"",""LinkId"":""01K4NTSB8V4SP4QE7HQJHGTB01""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telemedicine, did the selected Location include Telemedicine?"",""LinkId"":""01K4NTSH42XJJYVVTVCRZX3B1B""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selected Encounter Type?"",""LinkId"":""01K4NTSS37HXFY52JM97CBM5R0""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did any scrolling free text fields include a client quote, or their perspective on the service delivered?"",""LinkId"":""01K4NTT7178KBG5Y5S7VP0JC37""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the \""Selected Treatment Plan\"" question, was the Client’s name used in scrolling free text fields?"",""LinkId"":""01K4NTTC9X7ZB3H3NSRVMXFZ04""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the client themselves and referrals, did the note include the names and titles of other individuals or organizations involved in the service?"",""LinkId"":""01K4NTTHY72M70TA71C95PATJZ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the note include a behavioral description of the presenting problem in a scrolling free text field?"",""LinkId"":""01K4NTTTKBNC9YTA1AM3T8B0DJ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if a Clinical Quality Indicator other than Not Applicable, was selected, did the note include details that demonstrate the activity that was selected?"",""LinkId"":""01K4NTV0MNDJHTW73ABHVEF7T8""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if there is an Electronically Signed by date or an Original Submit DateTime, was the date within two days of the Date of Service, excluding weekends and holidays?"",""LinkId"":""01K4NTV63Q90E1X2T92BH3R6D4""}]
+
+Progress Note:
+Integral Care
+
+  Date Created:  09/30/2025 1:03 PM
+ Form Name:  PES 1240 Progress Note
+ Individual's Name:  FORBES, BRITTNEY (675543)
+ Individual's DOB:  08/06/1990
+ 
+
+  Integral Care
+
+ Travis County
+
+ Texas
+
+ 
+
+ Bells Notes
+
+ 
+
+ 
+
+  Individual:    Name:  BRITTNEY FORBES
+ MRN:  675543
+ Age:  35y
+ Gender:  Female
+ DOB:  08/06/1990
+ 
+
+ 
+ Practitioner:  DESIREE LORENZO
+ 
+
+  Location:  Clinic/Office (11)
+ Service Charge Code:  Crisis Services (1240)
+ Service Program:  2621-PES Adult-LOC 1 (2621)
+ myAvatar Note Type:  Crisis
+ 
+
+  Draft/Final:  Final
+ Visit Date/Time:   09/30/2025 10:59 AM  -  11:52 AM 
+ 
+
+ PES 1240 Progress Note
+
+  Narrative
+
+ Brittney is 35 years old, cisgender female, English speaker who presented to PES by herself referred by the ER. Brittney appears to be oriented in time, place and person. Brittney is dressed appropriately and appears to have her hygiene intact. Brittney presented with a flat affect and calm/cooperative mood. Brittney was able to maintain appropriate eye contact and appears to have linear thought process. Brittney expressed having passive SI ""If I die tomorrow, I wouldn't care"", Denied any plan or intention. Brittney denied any HI, SIB or AVH. 
+
+Brittney shared having the following mental health disorders: Major depressive disorder (F 33.1), traumatic stress disorder (F43.10), Generalized Anxiety Disorder (F 41.1) and borderline personality disorder (F60.3). Brittney shared that she is currently taking the following medications: Wellbutrin, Hydroxyzine, Trazodone and Methadone. Stated that she feels like her meds aren't working. Brittney shared experiencing the following symptoms: Anxiety, lack of sleep, intrusive thoughts, racing thoughts, flashbacks, paranoia (""people trying to hurt me""), lack of motivation, trouble concentrating and hopelessness. Brittney shared having a history of previous suicidal attempts with the last one being in 2014, when she attempted to end her life by overdosing on Heroine. Brittney also shared having a history of previous Self harm with the last one being in 2017 when she cut her wrist. Brittney shared having a history of previous psych hospitalizations but was unable to identify when her last hospitalization was. Brittney shared having a history of trauma expressing that there is childhood trauma and sexual abuse trauma as a child and adult. Identifying that she was rapped as a kid by her older brother. Brittney also shared a history of impulsive and aggressive behavior. Mentioning that she often acts without thinking and that she has a hard time managing/expressing her emotions. Brittney shared also having family history of mental health disorders and suicide.
+
+QMHP-CS implemented PHQ-9 to identify how Brittney has been feeling in the past 2 weeks. In this assessment Brittney scored a 20, indicating that she is currently experiencing Severe Depression.
+
+In Regard to her physical health Brittney shared having Hypothyroidism and stated that she is taking medications for it. Denied any other or current medical conditions or concerns. Shared having the following allergies: Shellfish, Bee and Codeine. Brittney also shared having a SUD expressing that she started using substances when she was 11 years old (crack) and that she is currently using weed and alcohol daily. Identifying the last used as last night. Brittney denied any other substance use including smoking and vaping.
+
+Brittney denied any current Legal issues other than been a victim of domestic violence and stated that she was able to make a police report against her aggressor.
+
+Brittney shared that her goal for today is to be able to be stable and be in a safe space where she can work on her mental health and change her medications. QMHP-CS is referring Brittney for CRU to assist with stabilization due to current presentation. QMHP-CS staffed with UM and Brittney was accepted into CRU at the Inn for a higher level of care. Brittney was able to safety plan with QMHP-CS and agreed to meet with Peer support to assist with Treatment Support for her SUD after being discharged from CRU. QMHP-CS encouraged Brittney to follow up with intake for ongoing services. QMHP-CS provided community resources, Domestic violence resources, intake information, warm lines and Peer support information. At the time of this assessment Brittney expressed experiencing passive SI but denied HI, any plan or intent. Brittney also denied having access to any substances or weapons/firearms.
+
+
+ 
+
+  Clinical Quality Indicator
+
+   S1   Not Applicable   
+
+ 
+
+ 
+
+  Form
+
+ PES 1240 - Screening & Risk Assessment Note
+
+ Appearance: Appropriate
+
+ Speech: Normal
+
+ Eye Contact: Normal
+
+ Affect: Flat
+
+ Behavior: Cooperative, and Calm
+
+ Thought Process: Organized
+
+ Motor Activity: Normal
+
+ Insight: Good
+
+ Judgement: Good
+
+ Current Plan: Brittney denied any plan or intent for SI or HI.
+
+ History of Impulsive Behavior: Yes
+
+ History of Aggressive Behavior: Yes
+
+ Overall Level of Risk: Low
+
+ The Crisis Constituted a Situation in Which (Select All That Apply): The individual's mental or physical health is at risk of serious deterioration
+
+ How often do you use?: daily
+
+ Are you currently experiencing symptoms of withdrawals? *If yes, assess for need for medical clearance: Unsure
+
+ Do you use tobacco products or do you vape?: No
+
+ If yes, would you like assistance quitting?: Yes
+
+ Do you have a need for immediate medical attention?: No
+
+ Are you currently in pain?: No
+
+ Suicidal Ideations: Current SI
+
+ Homicidal Ideations/Risks to Others: N/A
+
+ Substance Use: Current Use
+
+ Physical Risks of Harm: N/A
+
+ Environmental Factors: New Stressors/Life Changes
+
+ Thought Content: Paranoia, and Hopelessness/Negative Self-talk
+
+ Protective Factors When Assessing Risk of Harm : Ability to Identify Strengths/Reasons for Living, Connected to MH Services, Agreed to Safety Plan, Basic Needs are Met, and Access to Healthcare
+
+ Does the client have a history of trauma/abuse/neglect/exploitation?: Yes
+
+ Do they experience flashbacks, nightmares, intrusive thoughts?: Yes
+
+ Trauma History: Brittney shared having a history of trauma expressing that there is childhood trauma and sexual abuse trauma as a child and adult. Identifying that she was rapped as a kid by her older brother. 
+
+ Intervention provided in response to the crisis (Select All That Apply): Reality orientation to help the individual identity and manage their symptoms of their mental illness
+
+ Outcome Recommendations: QMHP-CS staffed with UM and Brittney was accepted into CRU at the Inn for a higher level of care to assist with stabilization. Brittney was able to safety plan with QMHP-CS and agreed to meet with Peer support to assist with Treatment Support for her SUD after being discharged from CRU. QMHP-CS encouraged Brittney to follow up with intake for ongoing services. QMHP-CS provided community resources, Domestic violence resources, intake information, warm lines and Peer support information. 
+
+ Referrals Provided: Peer Support, and Intake
+
+ Disposition: 02-CRU
+
+ Are you currently having thoughts about suicide? : Yes
+
+ Do you have a plan for suicide or homicide? : No
+
+ Are you currently having thoughts about harming or killing others? : No
+
+ Are you currently having thoughts about harming yourself but not killing yourself? : No
+
+ Have you attempted to harm yourself or someone else in the last 24 hours? : No
+
+ Are you currently using drugs or alcohol? : Yes
+
+ If you are currently using, when did you last use? : 09/29/2025
+
+ What type of substance(s) do you use? (check boxes for all that apply): Alcohol, and Marijuana/Hashish
+
+ Do you have any medical conditions: Yes
+
+ Do you take any medications on a daily basis? : Yes
+
+ What medications does the client take: Wellbutrin, Hydroxyzine, Trazodone and Methadone
+
+ What medical conditions has the client been diagnosed with: Hypothyroidism
+
+ If the client is currently experiencing pain, please rate between 1-10 (If above 7, recommend medical attention): 5
+
+ Do you have an Advance Directive or Psychiatric Advance Directive?: No
+
+ Would you like help in developing an Advance Directive or Psychiatric Advance Directive? : No
+
+ What language was the service provided in?: English
+
+ Crisis Indicator: Emergent
+
+ Recipient Code: Consumer
+
+ Encounter Type: Face to Face
+
+ Appointment Type: Unscheduled Services
+
+ COPSD: No
+
+ Was a caring contact card sent? (e.g. when a client misses an appointment, declines care, or anytime when clinically appropriate.): N/A
+
+ Was education regarding the suicide care pathway (e.g., flyer or verbale explanation) provided during this encounter?: N/A
+
+ Was this a Suicide Care Pathway intervention?: N/A
+
+ Suicide care interventions (can be provided to any client regardless of pathway enrollment status) : NA
+
+ 
+
+   Electronically Signed by: DESIREE LORENZO, QMHP - CS
+
+Additional Information:
+
+",True,converse
+3,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""The service was submitted before 11:59PM on the 3rd day after the date of service. The date of service and weekends should be excluded from the day calculation. If no, was a justification for the delay included?"",""LinkId"":""01K636ZBEYHPEXA1BPW37PM2G3""},{""Question"":""The service was submitted before 11:59PM on or before the 3rd day after the date of service. The date of service and weekends should be excluded from the day calculation. If no, was a justification for the delay included?"",""LinkId"":""01K636ZJ1504W15VDC9J2FDHHB""},{""Question"":""Excluding the Date of Service and Weekends, was the service electronically signed before 11:59PM on or before the 3rd day after the Date of Service. If no, was a justification for the delay included?"",""LinkId"":""01K636ZS3TZX740KSDMWEYKERX""},{""Question"":""If travel time is included, does the start travel time match the service start time?"",""LinkId"":""01K63707YK8EWXQSR1M40KJAFC""},{""Question"":""If a second travel time is included, does the service end time match the end travel time? If not, does the service end time match the end travel time minus the minutes deducted?"",""LinkId"":""01K6370HDG56JBAG9N1J46DK9H""},{""Question"":""If a second travel time is included, the service end time must either match the end travel time or match the end travel time minus any minutes deducted."",""LinkId"":""01K6370Q3R70TG61YD2R1X1HJG""},{""Question"":""Does the duration of the service appear realistic based on the narrative? e.g. At least one intervention per 20-30 minutes of service."",""LinkId"":""01K6371FRMV1QQ60TCCPAJKMK6""},{""Question"":""If the service location is \""Audio Only\"", was the client's identity verified, the reason for audio only based on the client's needs, and was there evidence that telehealth was offered?"",""LinkId"":""01K6371QB0YAZKD03B2C3MAYXM""},{""Question"":""The location selection (audio only, telehealth, home, office, etc...) must align to the care setting referenced in the \""Notes Field\"" and the \""Is this an in-person visit?\"" field. This shouldn't contradict regardless of the content in the note."",""LinkId"":""01K6371Z9QJWEMMQ71ASEEV3PK""},{""Question"":""For \""CSNONF2F or \""FSNONF2F\"" service codes, the location is not \""Audio Only\""."",""LinkId"":""01K63727175ZF23JB7X2N87GPT""}]
+
+Progress Note:
+Beacon Mental Health
+
+  Date Created:  09/30/2025 1:01 PM
+ Form Name:  Ambulatory Progress Note w/Columbia Assessment
+ Client's Name:  FINE, LORA, A (2594)
+ Client's DOB:  10/28/1964
+ 
+
+  Beacon Mental Health 
+
+ 3100 NE 83rd St Ste 1001
+
+ Kansas City, MO 64119-4460
+
+ 
+
+ 
+
+  Client:    Name:  LORA A FINE
+ MRN:  2594
+ Age:  60y
+ Gender:  Female
+ DOB:  10/28/1964
+ 
+
+ 
+ Practitioner:  LARRY LAUVETZ
+ 
+
+  Location:  Other (99)
+ Service Charge Code:  Community Support face to face (COMSUPFACE)
+ Service Program:  CPRP Adult (CPSADULT-C)
+ myAvatar Note Type:  Tri-County Progress Note
+ 
+
+  Draft/Final:  Final
+ Session Date/Time:   09/26/2025 12:55 PM  -  2:59 PM 
+ 
+
+ Ambulatory Progress Note w/Columbia Assessment
+
+  Narrative
+
+ TRAVEL TIME: 0/2:46-2:59 (onto a therapy client)
+TIME DEDUCTED (IF NEEDED): 5 min for her Xray (actual end time was 3:04)
+SITUATION: Lora had a follow up appt with Dr. Tag on this date as she had broken her L upper arm several weeks ago.
+INTERVENTION: Writer escorted Lora from the day program to KC Ortho Clinic for her 1:20 appt. On the way, we discussed how well Lora has been doing and how this appt should be quite easy. Writer and Lora then arrived the clinic and writer assisted Lora with signing in and filling out the required paperwork. Writer and Lora then waited until her name was called which it eventually was. Lora met with the nurse and then she was escorted to get an Xray of her arm. Dr. Tag's PA then met with us and stated that she is ""doing great"" and she should keep up her physical therapy (which she does at the day program). Writer and Lora then made another follow up appt for 6 weeks and then departed. Writer escorted Lora home and then departed. 
+RESPONSE: Lora was in a good mood and stated that she is glad that she does not have to wear her sling any longer and she can do more physical exercises. Lora was happy that her arm is healing like it should and she had no other concerns on this date. Lora was very appreciative for the assistance on this day.
+PLAN: Lora will continue to come to day program every day and writer will assist with medical appts as they arise.
+
+
+ 
+
+  Goals
+
+ Problems-> Paranoid schizophrenia
+Goals-> ""I would like to keep going to day program and stay busy, keep coloring. I want to stay away from people that cause problems.""
+Objectives-> Lora will follow up on physical health by attending PCP appointments monthly and going to specialists if needed. She will complete eye exam by end of October of 2025. She will stay up to date with routine exams. She will take care of hearing aids and wear them daily. She will inform CM if needing to meet with audiologist due to any concerns that arise.
+Interventions-> PCP/Specialists will offer medication management and treatment recommendations. Case Worker will assist client by encouraging her to speak up about any concerns she is having. CM will provide support for client utilizing hearing aids and ensure she is able to communicate concerns effectively.
+
+ 
+
+  Form
+
+ Columbia Assessment
+
+ 1. In the past month, have you wished you were dead or wished you could go to sleep and not wake up?: Not Assessed
+
+ Comments: Lora has never displayed SI as long as I have known her (18 yrs)
+
+ 2. In the past month, have you actually had any thoughts about killing yourself?: Not Assessed
+
+ 6. In the past 3 months, have you done anything, started to do anything, or prepared to do anything to end your life?: Not Assessed
+
+ Is this an In-person visit?: Yes
+
+ 
+
+   Electronically Signed by: LARRY LAUVETZ, LPC
+
+Additional Information:
+
+",True,converse
+4,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if  \""The individual presented an immediate danger to self or others\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTM9WEKB9NX7ZTR2XZXP1F""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if  \""The individual's mental or physical health is at risk of serious deterioration\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTMM63DJ37ZF7AZWWK0B38""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if \""The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTMTP5JMY9GXB4AQ2W6PFR""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did  any scrolling free text fields include the individual's risk of suicide and homicide (client denies SI/HI/AVH is insufficient)?"",""LinkId"":""01K4NTN2592RX960YW0RZ7GT61""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the assessment of risk include lethality (such as availability of proposed method, specificity of the plan, availability of supports, or proximity)?"",""LinkId"":""01K4NTNAHQT7A8ABJYK5M6NJM7""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was the individual's substance use assessed during the service and documented in any scrolling free text boxes?"",""LinkId"":""01K4NZHRX6V3RWVSW3S9JEP524""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", excluding the treatment plan section, and if the individual's presentation allowed for Trauma, abuse, or neglect to be assessed during the service, was it documented in a scrolling free text field (no trauma or no history is insufficient documentation)?"",""LinkId"":""01K4NTR8DNX22R1V9RXB7TVPG6""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the progress note include the outcome of the crisis?"",""LinkId"":""01K4NTRGQKX3V8XY7422DEEFN9""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selections made in the \""Intervention provided in response to the crisis (Select All That Apply) question?"",""LinkId"":""01K4NTRPN6EMDGTXW25ANW1DP5""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the note include a description of the event or behavior that prompted a crisis service?"",""LinkId"":""01K4NTRX0BGMCCTYJB4R7ZZX7X""}]
+
+Progress Note:
+Integral Care
+
+  Date Created:  09/30/2025 1:03 PM
+ Form Name:  PES 1240 Progress Note
+ Individual's Name:  FORBES, BRITTNEY (675543)
+ Individual's DOB:  08/06/1990
+ 
+
+  Integral Care
+
+ Travis County
+
+ Texas
+
+ 
+
+ Bells Notes
+
+ 
+
+ 
+
+  Individual:    Name:  BRITTNEY FORBES
+ MRN:  675543
+ Age:  35y
+ Gender:  Female
+ DOB:  08/06/1990
+ 
+
+ 
+ Practitioner:  DESIREE LORENZO
+ 
+
+  Location:  Clinic/Office (11)
+ Service Charge Code:  Crisis Services (1240)
+ Service Program:  2621-PES Adult-LOC 1 (2621)
+ myAvatar Note Type:  Crisis
+ 
+
+  Draft/Final:  Final
+ Visit Date/Time:   09/30/2025 10:59 AM  -  11:52 AM 
+ 
+
+ PES 1240 Progress Note
+
+  Narrative
+
+ Brittney is 35 years old, cisgender female, English speaker who presented to PES by herself referred by the ER. Brittney appears to be oriented in time, place and person. Brittney is dressed appropriately and appears to have her hygiene intact. Brittney presented with a flat affect and calm/cooperative mood. Brittney was able to maintain appropriate eye contact and appears to have linear thought process. Brittney expressed having passive SI ""If I die tomorrow, I wouldn't care"", Denied any plan or intention. Brittney denied any HI, SIB or AVH. 
+
+Brittney shared having the following mental health disorders: Major depressive disorder (F 33.1), traumatic stress disorder (F43.10), Generalized Anxiety Disorder (F 41.1) and borderline personality disorder (F60.3). Brittney shared that she is currently taking the following medications: Wellbutrin, Hydroxyzine, Trazodone and Methadone. Stated that she feels like her meds aren't working. Brittney shared experiencing the following symptoms: Anxiety, lack of sleep, intrusive thoughts, racing thoughts, flashbacks, paranoia (""people trying to hurt me""), lack of motivation, trouble concentrating and hopelessness. Brittney shared having a history of previous suicidal attempts with the last one being in 2014, when she attempted to end her life by overdosing on Heroine. Brittney also shared having a history of previous Self harm with the last one being in 2017 when she cut her wrist. Brittney shared having a history of previous psych hospitalizations but was unable to identify when her last hospitalization was. Brittney shared having a history of trauma expressing that there is childhood trauma and sexual abuse trauma as a child and adult. Identifying that she was rapped as a kid by her older brother. Brittney also shared a history of impulsive and aggressive behavior. Mentioning that she often acts without thinking and that she has a hard time managing/expressing her emotions. Brittney shared also having family history of mental health disorders and suicide.
+
+QMHP-CS implemented PHQ-9 to identify how Brittney has been feeling in the past 2 weeks. In this assessment Brittney scored a 20, indicating that she is currently experiencing Severe Depression.
+
+In Regard to her physical health Brittney shared having Hypothyroidism and stated that she is taking medications for it. Denied any other or current medical conditions or concerns. Shared having the following allergies: Shellfish, Bee and Codeine. Brittney also shared having a SUD expressing that she started using substances when she was 11 years old (crack) and that she is currently using weed and alcohol daily. Identifying the last used as last night. Brittney denied any other substance use including smoking and vaping.
+
+Brittney denied any current Legal issues other than been a victim of domestic violence and stated that she was able to make a police report against her aggressor.
+
+Brittney shared that her goal for today is to be able to be stable and be in a safe space where she can work on her mental health and change her medications. QMHP-CS is referring Brittney for CRU to assist with stabilization due to current presentation. QMHP-CS staffed with UM and Brittney was accepted into CRU at the Inn for a higher level of care. Brittney was able to safety plan with QMHP-CS and agreed to meet with Peer support to assist with Treatment Support for her SUD after being discharged from CRU. QMHP-CS encouraged Brittney to follow up with intake for ongoing services. QMHP-CS provided community resources, Domestic violence resources, intake information, warm lines and Peer support information. At the time of this assessment Brittney expressed experiencing passive SI but denied HI, any plan or intent. Brittney also denied having access to any substances or weapons/firearms.
+
+
+ 
+
+  Clinical Quality Indicator
+
+   S1   Not Applicable   
+
+ 
+
+ 
+
+  Form
+
+ PES 1240 - Screening & Risk Assessment Note
+
+ Appearance: Appropriate
+
+ Speech: Normal
+
+ Eye Contact: Normal
+
+ Affect: Flat
+
+ Behavior: Cooperative, and Calm
+
+ Thought Process: Organized
+
+ Motor Activity: Normal
+
+ Insight: Good
+
+ Judgement: Good
+
+ Current Plan: Brittney denied any plan or intent for SI or HI.
+
+ History of Impulsive Behavior: Yes
+
+ History of Aggressive Behavior: Yes
+
+ Overall Level of Risk: Low
+
+ The Crisis Constituted a Situation in Which (Select All That Apply): The individual's mental or physical health is at risk of serious deterioration
+
+ How often do you use?: daily
+
+ Are you currently experiencing symptoms of withdrawals? *If yes, assess for need for medical clearance: Unsure
+
+ Do you use tobacco products or do you vape?: No
+
+ If yes, would you like assistance quitting?: Yes
+
+ Do you have a need for immediate medical attention?: No
+
+ Are you currently in pain?: No
+
+ Suicidal Ideations: Current SI
+
+ Homicidal Ideations/Risks to Others: N/A
+
+ Substance Use: Current Use
+
+ Physical Risks of Harm: N/A
+
+ Environmental Factors: New Stressors/Life Changes
+
+ Thought Content: Paranoia, and Hopelessness/Negative Self-talk
+
+ Protective Factors When Assessing Risk of Harm : Ability to Identify Strengths/Reasons for Living, Connected to MH Services, Agreed to Safety Plan, Basic Needs are Met, and Access to Healthcare
+
+ Does the client have a history of trauma/abuse/neglect/exploitation?: Yes
+
+ Do they experience flashbacks, nightmares, intrusive thoughts?: Yes
+
+ Trauma History: Brittney shared having a history of trauma expressing that there is childhood trauma and sexual abuse trauma as a child and adult. Identifying that she was rapped as a kid by her older brother. 
+
+ Intervention provided in response to the crisis (Select All That Apply): Reality orientation to help the individual identity and manage their symptoms of their mental illness
+
+ Outcome Recommendations: QMHP-CS staffed with UM and Brittney was accepted into CRU at the Inn for a higher level of care to assist with stabilization. Brittney was able to safety plan with QMHP-CS and agreed to meet with Peer support to assist with Treatment Support for her SUD after being discharged from CRU. QMHP-CS encouraged Brittney to follow up with intake for ongoing services. QMHP-CS provided community resources, Domestic violence resources, intake information, warm lines and Peer support information. 
+
+ Referrals Provided: Peer Support, and Intake
+
+ Disposition: 02-CRU
+
+ Are you currently having thoughts about suicide? : Yes
+
+ Do you have a plan for suicide or homicide? : No
+
+ Are you currently having thoughts about harming or killing others? : No
+
+ Are you currently having thoughts about harming yourself but not killing yourself? : No
+
+ Have you attempted to harm yourself or someone else in the last 24 hours? : No
+
+ Are you currently using drugs or alcohol? : Yes
+
+ If you are currently using, when did you last use? : 09/29/2025
+
+ What type of substance(s) do you use? (check boxes for all that apply): Alcohol, and Marijuana/Hashish
+
+ Do you have any medical conditions: Yes
+
+ Do you take any medications on a daily basis? : Yes
+
+ What medications does the client take: Wellbutrin, Hydroxyzine, Trazodone and Methadone
+
+ What medical conditions has the client been diagnosed with: Hypothyroidism
+
+ If the client is currently experiencing pain, please rate between 1-10 (If above 7, recommend medical attention): 5
+
+ Do you have an Advance Directive or Psychiatric Advance Directive?: No
+
+ Would you like help in developing an Advance Directive or Psychiatric Advance Directive? : No
+
+ What language was the service provided in?: English
+
+ Crisis Indicator: Emergent
+
+ Recipient Code: Consumer
+
+ Encounter Type: Face to Face
+
+ Appointment Type: Unscheduled Services
+
+ COPSD: No
+
+ Was a caring contact card sent? (e.g. when a client misses an appointment, declines care, or anytime when clinically appropriate.): N/A
+
+ Was education regarding the suicide care pathway (e.g., flyer or verbale explanation) provided during this encounter?: N/A
+
+ Was this a Suicide Care Pathway intervention?: N/A
+
+ Suicide care interventions (can be provided to any client regardless of pathway enrollment status) : NA
+
+ 
+
+   Electronically Signed by: DESIREE LORENZO, QMHP - CS
+
+Additional Information:
+
+",True,converse
+5,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did staff outline follow-up activities based on the events described in the service?"",""LinkId"":""01K4NTS2RNHP6TJKPKGR9MHQQ1""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telephone or Telephone Call Back, Did the selected Location include Telephone?"",""LinkId"":""01K4NTSB8V4SP4QE7HQJHGTB01""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telemedicine, did the selected Location include Telemedicine?"",""LinkId"":""01K4NTSH42XJJYVVTVCRZX3B1B""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selected Encounter Type?"",""LinkId"":""01K4NTSS37HXFY52JM97CBM5R0""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did any scrolling free text fields include a client quote, or their perspective on the service delivered?"",""LinkId"":""01K4NTT7178KBG5Y5S7VP0JC37""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the \""Selected Treatment Plan\"" question, was the Client’s name used in scrolling free text fields?"",""LinkId"":""01K4NTTC9X7ZB3H3NSRVMXFZ04""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the client themselves and referrals, did the note include the names and titles of other individuals or organizations involved in the service?"",""LinkId"":""01K4NTTHY72M70TA71C95PATJZ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the note include a behavioral description of the presenting problem in a scrolling free text field?"",""LinkId"":""01K4NTTTKBNC9YTA1AM3T8B0DJ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if a Clinical Quality Indicator other than Not Applicable, was selected, did the note include details that demonstrate the activity that was selected?"",""LinkId"":""01K4NTV0MNDJHTW73ABHVEF7T8""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if there is an Electronically Signed by date or an Original Submit DateTime, was the date within two days of the Date of Service, excluding weekends and holidays?"",""LinkId"":""01K4NTV63Q90E1X2T92BH3R6D4""}]
+
+Progress Note:
+Integral Care
+
+  Date Created:  09/30/2025 12:56 PM
+ Form Name:  Crisis Services (1240) Progress Note
+ Individual's Name:  PIERCE, BRIAN (680272)
+ Individual's DOB:  09/02/1980
+ 
+
+  Integral Care
+
+ Travis County
+
+ Texas
+
+ 
+
+ Bells Notes
+
+ 
+
+ 
+
+  Individual:    Name:  BRIAN PIERCE
+ MRN:  680272
+ Age:  45y
+ Gender:  Male
+ DOB:  09/02/1980
+ 
+
+ 
+ Practitioner:  ADEWALE E. ADEGBITE
+ 
+
+  Location:  Residential Facility (103)
+ Service Charge Code:  Crisis Services (1240)
+ Service Program:  2830-Herman Center-LOC 0 (2830)
+ myAvatar Note Type:  Nursing
+ 
+
+  Draft/Final:  Final
+ Visit Date/Time:   09/30/2025 12:12 PM  -  12:32 PM 
+ 
+
+ Crisis Services (1240) Progress Note
+
+  Narrative
+
+ Brian was seen today for routine wound dress as ordered , nursing assessment and medication education. During the interaction,remain cam and cooperative, alert, oriented to person, place, and time, and demonstrated appropriate engagement. Mood appeared stable, and affect was congruent with stable emotional state. No signs of acute distress, agitation, or psychosis were observed. Client participated in scheduled therapeutic activities and interacted appropriately with peers and staff. His wound changed , observed draining ""Serosanguinous"" , no PUs drainage at the moment but showing signs of infection. Wound dressed according to protocol. 
+His antibiotic came in and medication education was provided, focusing on the importance of adherence to prescribed antibiotic therapy and psychotropic medications, understanding the role of medications in symptom stabilization, and recognizing potential side effects. Client was encouraged to report any changes in mood, sleep, appetite, or physical symptoms to nursing staff promptly. Emphasis was placed on the need for consistency in taking medications as prescribed and maintaining open communication with the treatment team. The client verbalized understanding and asked relevant questions, indicating engagement in their treatment plan.
+No safety concerns were identified at this time. The client denied any thoughts of self-harm or harm to others. Environment was assessed and found to be safe. Vitals were within normal limits, and no physical complaints were reported. The client will continue to be monitored daily, and medication education will be reinforced as part of ongoing care.
+
+ 
+
+  Clinical Quality Indicator
+
+   S1   Not Applicable   
+
+ 
+
+ 
+
+  Form
+
+ Crisis Services (1240) Progress Note
+
+ The Crisis Constituted a Situation in Which (Select all that Apply): The individual's mental or physical health is at risk of serious deterioration, and The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration
+
+ Risk of Harm: Risk of harm is low at the moment . Client denies SI , HI and AVH. However, theiur is need tpo ensure close observationduring his hospitalization due to the nature of his Self injurious behaviour prior to admission 
+
+ Medical/ Trauma/ Substance Use : Ensure wounds are clean and dress
+
+ Intervention provided in response to the crisis (Select All That Apply): Problem Solving, Reality orientation to help the individual identify and manage their symptoms of their mental illness, and Provided instruction and structure to the individual in adapting to and coping with stressors
+
+ Other Relevant Problems/Info: Unemployed and unhoused 
+
+ Referrals: None at the moment 
+
+ Response of the consumer (If appropriate, response of the Accompanying LAR and family members): Client hope to continue receiving client centered mental health support which include stabilization , review of medications( medication management), access to therapy and, counseling to address underlying concerns, and provision of community resources to help stabilize and maintain community optimal functioning.
+
+ Disposition/Crisis Plan: Ensure close observation 
+
+ Crisis Indicator: Urgent
+
+ Recipient Code: Consumer
+
+ Encounter Type: Face to Face
+
+ Appointment Type: Unscheduled Services
+
+ COPSD: No
+
+ What language was the service provided in?: English
+
+ Do you have an Advance Directive or Psychiatric Advance Directive? : No
+
+ Would you like help in developing an Advance Directive or Psychiatric Advance Directive? : No
+
+ 
+
+   Electronically Signed by: ADEWALE E. ADEGBITE, REGISTERED NURSE
+
+Additional Information:
+
+",True,converse
+6,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if  \""The individual presented an immediate danger to self or others\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTM9WEKB9NX7ZTR2XZXP1F""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if  \""The individual's mental or physical health is at risk of serious deterioration\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTMM63DJ37ZF7AZWWK0B38""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if \""The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTMTP5JMY9GXB4AQ2W6PFR""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did  any scrolling free text fields include the individual's risk of suicide and homicide (client denies SI/HI/AVH is insufficient)?"",""LinkId"":""01K4NTN2592RX960YW0RZ7GT61""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the assessment of risk include lethality (such as availability of proposed method, specificity of the plan, availability of supports, or proximity)?"",""LinkId"":""01K4NTNAHQT7A8ABJYK5M6NJM7""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was the individual's substance use assessed during the service and documented in any scrolling free text boxes?"",""LinkId"":""01K4NZHRX6V3RWVSW3S9JEP524""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", excluding the treatment plan section, and if the individual's presentation allowed for Trauma, abuse, or neglect to be assessed during the service, was it documented in a scrolling free text field (no trauma or no history is insufficient documentation)?"",""LinkId"":""01K4NTR8DNX22R1V9RXB7TVPG6""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the progress note include the outcome of the crisis?"",""LinkId"":""01K4NTRGQKX3V8XY7422DEEFN9""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selections made in the \""Intervention provided in response to the crisis (Select All That Apply) question?"",""LinkId"":""01K4NTRPN6EMDGTXW25ANW1DP5""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the note include a description of the event or behavior that prompted a crisis service?"",""LinkId"":""01K4NTRX0BGMCCTYJB4R7ZZX7X""}]
+
+Progress Note:
+Integral Care
+
+  Date Created:  09/30/2025 12:56 PM
+ Form Name:  Crisis Services (1240) Progress Note
+ Individual's Name:  PIERCE, BRIAN (680272)
+ Individual's DOB:  09/02/1980
+ 
+
+  Integral Care
+
+ Travis County
+
+ Texas
+
+ 
+
+ Bells Notes
+
+ 
+
+ 
+
+  Individual:    Name:  BRIAN PIERCE
+ MRN:  680272
+ Age:  45y
+ Gender:  Male
+ DOB:  09/02/1980
+ 
+
+ 
+ Practitioner:  ADEWALE E. ADEGBITE
+ 
+
+  Location:  Residential Facility (103)
+ Service Charge Code:  Crisis Services (1240)
+ Service Program:  2830-Herman Center-LOC 0 (2830)
+ myAvatar Note Type:  Nursing
+ 
+
+  Draft/Final:  Final
+ Visit Date/Time:   09/30/2025 12:12 PM  -  12:32 PM 
+ 
+
+ Crisis Services (1240) Progress Note
+
+  Narrative
+
+ Brian was seen today for routine wound dress as ordered , nursing assessment and medication education. During the interaction,remain cam and cooperative, alert, oriented to person, place, and time, and demonstrated appropriate engagement. Mood appeared stable, and affect was congruent with stable emotional state. No signs of acute distress, agitation, or psychosis were observed. Client participated in scheduled therapeutic activities and interacted appropriately with peers and staff. His wound changed , observed draining ""Serosanguinous"" , no PUs drainage at the moment but showing signs of infection. Wound dressed according to protocol. 
+His antibiotic came in and medication education was provided, focusing on the importance of adherence to prescribed antibiotic therapy and psychotropic medications, understanding the role of medications in symptom stabilization, and recognizing potential side effects. Client was encouraged to report any changes in mood, sleep, appetite, or physical symptoms to nursing staff promptly. Emphasis was placed on the need for consistency in taking medications as prescribed and maintaining open communication with the treatment team. The client verbalized understanding and asked relevant questions, indicating engagement in their treatment plan.
+No safety concerns were identified at this time. The client denied any thoughts of self-harm or harm to others. Environment was assessed and found to be safe. Vitals were within normal limits, and no physical complaints were reported. The client will continue to be monitored daily, and medication education will be reinforced as part of ongoing care.
+
+ 
+
+  Clinical Quality Indicator
+
+   S1   Not Applicable   
+
+ 
+
+ 
+
+  Form
+
+ Crisis Services (1240) Progress Note
+
+ The Crisis Constituted a Situation in Which (Select all that Apply): The individual's mental or physical health is at risk of serious deterioration, and The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration
+
+ Risk of Harm: Risk of harm is low at the moment . Client denies SI , HI and AVH. However, theiur is need tpo ensure close observationduring his hospitalization due to the nature of his Self injurious behaviour prior to admission 
+
+ Medical/ Trauma/ Substance Use : Ensure wounds are clean and dress
+
+ Intervention provided in response to the crisis (Select All That Apply): Problem Solving, Reality orientation to help the individual identify and manage their symptoms of their mental illness, and Provided instruction and structure to the individual in adapting to and coping with stressors
+
+ Other Relevant Problems/Info: Unemployed and unhoused 
+
+ Referrals: None at the moment 
+
+ Response of the consumer (If appropriate, response of the Accompanying LAR and family members): Client hope to continue receiving client centered mental health support which include stabilization , review of medications( medication management), access to therapy and, counseling to address underlying concerns, and provision of community resources to help stabilize and maintain community optimal functioning.
+
+ Disposition/Crisis Plan: Ensure close observation 
+
+ Crisis Indicator: Urgent
+
+ Recipient Code: Consumer
+
+ Encounter Type: Face to Face
+
+ Appointment Type: Unscheduled Services
+
+ COPSD: No
+
+ What language was the service provided in?: English
+
+ Do you have an Advance Directive or Psychiatric Advance Directive? : No
+
+ Would you like help in developing an Advance Directive or Psychiatric Advance Directive? : No
+
+ 
+
+   Electronically Signed by: ADEWALE E. ADEGBITE, REGISTERED NURSE
+
+Additional Information:
+
+",True,converse
+7,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did staff outline follow-up activities based on the events described in the service?"",""LinkId"":""01K4NTS2RNHP6TJKPKGR9MHQQ1""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telephone or Telephone Call Back, Did the selected Location include Telephone?"",""LinkId"":""01K4NTSB8V4SP4QE7HQJHGTB01""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telemedicine, did the selected Location include Telemedicine?"",""LinkId"":""01K4NTSH42XJJYVVTVCRZX3B1B""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selected Encounter Type?"",""LinkId"":""01K4NTSS37HXFY52JM97CBM5R0""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did any scrolling free text fields include a client quote, or their perspective on the service delivered?"",""LinkId"":""01K4NTT7178KBG5Y5S7VP0JC37""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the \""Selected Treatment Plan\"" question, was the Client’s name used in scrolling free text fields?"",""LinkId"":""01K4NTTC9X7ZB3H3NSRVMXFZ04""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the client themselves and referrals, did the note include the names and titles of other individuals or organizations involved in the service?"",""LinkId"":""01K4NTTHY72M70TA71C95PATJZ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the note include a behavioral description of the presenting problem in a scrolling free text field?"",""LinkId"":""01K4NTTTKBNC9YTA1AM3T8B0DJ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if a Clinical Quality Indicator other than Not Applicable, was selected, did the note include details that demonstrate the activity that was selected?"",""LinkId"":""01K4NTV0MNDJHTW73ABHVEF7T8""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if there is an Electronically Signed by date or an Original Submit DateTime, was the date within two days of the Date of Service, excluding weekends and holidays?"",""LinkId"":""01K4NTV63Q90E1X2T92BH3R6D4""}]
+
+Progress Note:
+Integral Care
+
+  Date Created:  09/30/2025 12:56 PM
+ Form Name:  Crisis Services (1240) Progress Note
+ Individual's Name:  REGALADO, JOHN (673547)
+ Individual's DOB:  10/28/1967
+ 
+
+  Integral Care
+
+ Travis County
+
+ Texas
+
+ 
+
+ Bells Notes
+
+ 
+
+ 
+
+  Individual:    Name:  JOHN REGALADO
+ MRN:  673547
+ Age:  57y
+ Gender:  Male
+ DOB:  10/28/1967
+ 
+
+ 
+ Practitioner:  LILA ELLIS
+ Co-Practitioner:  RH.Bells.Contracts.Resources.Practitioner!.Display
+ 
+
+  Location:  Nursing Facility (32)
+ Service Charge Code:  Crisis Services (1240)
+ Service Program:  2600-MCOT Adult-LOC 0 (2600)
+ myAvatar Note Type:  Crisis
+ 
+
+  Draft/Final:  Final
+ Visit Date/Time:   09/29/2025 12:36 PM  -  1:07 PM 
+ 
+
+ Crisis Services (1240) Progress Note
+
+  Narrative
+
+ MCOT arrived at Pflugerville Nursing and Rehabilitation Center to meet with John following a routine dispatch from hotline. MCOT checked in at the front desk and met with John in his room for the duration of the assessment. John was sitting on his bed watching TV when MCOT arrived and appeared well groomed, dressed in casual clothes. John's mood was low and his affect was congruent; however, he was able to smile and laugh appropriately at time. His speech was clear, coherent, and of normal rate and volume and his thought processes were linear and logical. John explained that ""was doing fine"" until yesterday (9/28) when he started ""digging up stuff from my past."" He described missing his mom, whom he was the caretaker for until she passed away. John denied current SI, HI, AVH, and SUD. He disclosed that he has a history of SIB and pointed to long scars on his forearms where he had engaged in cutting, but stated that the last time he self-harmed was 15 years ago. John described having little to no appetite and that he has only been having water and protein shakes for the past 4 weeks. He added that the past two times he's tried to eat solid food, he has gotten sick. John endorsed sleeping 6 - 8 hours a night and taking naps during the day. When asked about current abuse or neglect, John said he liked the facility he was in but disclosed enduring neglectful treatment at San Gabriel Rehabilitation and Care Center in the past, stating, ""they treated me terribly"". John also disclosed that he has childhood trauma and was molested as a child. John explained that his current coping skills include going on walks and doing push-ups and sit-ups but that he would like to get a therapist and receive mental health counseling. John endorsed having people to talk to, including the staff at his current nursing facility. John does not have transportation and is unsure of his current discharge date. MCOT provided information about IC and the services offered, including housing and case management, as well as a business card with IC's hotline information. John expressed confidence in his ability to contact emergency services as needed. MCOT will follow up to ensure safety and connection to resources. 
+
+ 
+
+  Clinical Quality Indicator
+
+   S1   Not Applicable   
+
+ 
+
+ 
+
+  Form
+
+ Crisis Services (1240) Progress Note
+
+ The Crisis Constituted a Situation in Which (Select all that Apply): The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration
+
+ Risk of Harm: Risk of Harm: Low
+Risk Factors: childhood trauma, not connected to a counselor, mother's death
+Protective Factors: optimism, resilience, desire to receive therapeutic support
+
+ Medical/ Trauma/ Substance Use : John is currently in a nursing and rehabilitation center.
+
+ Intervention provided in response to the crisis (Select All That Apply): Problem Solving
+
+ Other Relevant Problems/Info: John receives SSDI benefits. He is interested in help with housing for after he gets discharged from the rehabilitation center. He does not have car or another form of transportation.
+
+ Referrals: MCOT provided information about IC and the services offered, including housing and case management, as well as a business card with IC's hotline information.
+
+ Response of the consumer (If appropriate, response of the Accompanying LAR and family members): John was very thankful to MCOT and agreeable to a follow up to learn more about getting connected to IC.
+
+ Disposition/Crisis Plan: MCOT determined that John was at a low risk of harm due to childhood trauma, not being connected to a counselor, and his mother's death, as well as his optimism, resilience, and desire to receive therapeutic support. MCOT provided information about IC and the services offered, including housing and case management, as well as a business card with IC's hotline information. MCOT will follow up to ensure safety and connection to resources.
+
+ Crisis Indicator: Routine
+
+ Recipient Code: Consumer
+
+ Encounter Type: Face to Face
+
+ Appointment Type: Unscheduled Services
+
+ COPSD: No
+
+ What language was the service provided in?: English
+
+ Do you have an Advance Directive or Psychiatric Advance Directive? : Unknown or N/A
+
+ If Unknown or N/A, please explain: Unable to asses due to nature of crisis.
+
+ 
+
+   Electronically Signed by: LILA ELLIS, QMHP - CS
+
+Additional Information:
+
+",True,converse
+8,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if  \""The individual presented an immediate danger to self or others\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTM9WEKB9NX7ZTR2XZXP1F""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if  \""The individual's mental or physical health is at risk of serious deterioration\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTMM63DJ37ZF7AZWWK0B38""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if \""The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration\"" was selected in the Crisis Constituted a Situation in Which (Select All That Apply) question did the documentation in the scrolling text fields support that?"",""LinkId"":""01K4NTMTP5JMY9GXB4AQ2W6PFR""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did  any scrolling free text fields include the individual's risk of suicide and homicide (client denies SI/HI/AVH is insufficient)?"",""LinkId"":""01K4NTN2592RX960YW0RZ7GT61""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the assessment of risk include lethality (such as availability of proposed method, specificity of the plan, availability of supports, or proximity)?"",""LinkId"":""01K4NTNAHQT7A8ABJYK5M6NJM7""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was the individual's substance use assessed during the service and documented in any scrolling free text boxes?"",""LinkId"":""01K4NZHRX6V3RWVSW3S9JEP524""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", excluding the treatment plan section, and if the individual's presentation allowed for Trauma, abuse, or neglect to be assessed during the service, was it documented in a scrolling free text field (no trauma or no history is insufficient documentation)?"",""LinkId"":""01K4NTR8DNX22R1V9RXB7TVPG6""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the progress note include the outcome of the crisis?"",""LinkId"":""01K4NTRGQKX3V8XY7422DEEFN9""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selections made in the \""Intervention provided in response to the crisis (Select All That Apply) question?"",""LinkId"":""01K4NTRPN6EMDGTXW25ANW1DP5""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the note include a description of the event or behavior that prompted a crisis service?"",""LinkId"":""01K4NTRX0BGMCCTYJB4R7ZZX7X""}]
+
+Progress Note:
+Integral Care
+
+  Date Created:  09/30/2025 12:56 PM
+ Form Name:  Crisis Services (1240) Progress Note
+ Individual's Name:  REGALADO, JOHN (673547)
+ Individual's DOB:  10/28/1967
+ 
+
+  Integral Care
+
+ Travis County
+
+ Texas
+
+ 
+
+ Bells Notes
+
+ 
+
+ 
+
+  Individual:    Name:  JOHN REGALADO
+ MRN:  673547
+ Age:  57y
+ Gender:  Male
+ DOB:  10/28/1967
+ 
+
+ 
+ Practitioner:  LILA ELLIS
+ Co-Practitioner:  RH.Bells.Contracts.Resources.Practitioner!.Display
+ 
+
+  Location:  Nursing Facility (32)
+ Service Charge Code:  Crisis Services (1240)
+ Service Program:  2600-MCOT Adult-LOC 0 (2600)
+ myAvatar Note Type:  Crisis
+ 
+
+  Draft/Final:  Final
+ Visit Date/Time:   09/29/2025 12:36 PM  -  1:07 PM 
+ 
+
+ Crisis Services (1240) Progress Note
+
+  Narrative
+
+ MCOT arrived at Pflugerville Nursing and Rehabilitation Center to meet with John following a routine dispatch from hotline. MCOT checked in at the front desk and met with John in his room for the duration of the assessment. John was sitting on his bed watching TV when MCOT arrived and appeared well groomed, dressed in casual clothes. John's mood was low and his affect was congruent; however, he was able to smile and laugh appropriately at time. His speech was clear, coherent, and of normal rate and volume and his thought processes were linear and logical. John explained that ""was doing fine"" until yesterday (9/28) when he started ""digging up stuff from my past."" He described missing his mom, whom he was the caretaker for until she passed away. John denied current SI, HI, AVH, and SUD. He disclosed that he has a history of SIB and pointed to long scars on his forearms where he had engaged in cutting, but stated that the last time he self-harmed was 15 years ago. John described having little to no appetite and that he has only been having water and protein shakes for the past 4 weeks. He added that the past two times he's tried to eat solid food, he has gotten sick. John endorsed sleeping 6 - 8 hours a night and taking naps during the day. When asked about current abuse or neglect, John said he liked the facility he was in but disclosed enduring neglectful treatment at San Gabriel Rehabilitation and Care Center in the past, stating, ""they treated me terribly"". John also disclosed that he has childhood trauma and was molested as a child. John explained that his current coping skills include going on walks and doing push-ups and sit-ups but that he would like to get a therapist and receive mental health counseling. John endorsed having people to talk to, including the staff at his current nursing facility. John does not have transportation and is unsure of his current discharge date. MCOT provided information about IC and the services offered, including housing and case management, as well as a business card with IC's hotline information. John expressed confidence in his ability to contact emergency services as needed. MCOT will follow up to ensure safety and connection to resources. 
+
+ 
+
+  Clinical Quality Indicator
+
+   S1   Not Applicable   
+
+ 
+
+ 
+
+  Form
+
+ Crisis Services (1240) Progress Note
+
+ The Crisis Constituted a Situation in Which (Select all that Apply): The individual believes that he or she presents an immediate danger to self or others or that his or her mental or physical health is at risk or serious deterioration
+
+ Risk of Harm: Risk of Harm: Low
+Risk Factors: childhood trauma, not connected to a counselor, mother's death
+Protective Factors: optimism, resilience, desire to receive therapeutic support
+
+ Medical/ Trauma/ Substance Use : John is currently in a nursing and rehabilitation center.
+
+ Intervention provided in response to the crisis (Select All That Apply): Problem Solving
+
+ Other Relevant Problems/Info: John receives SSDI benefits. He is interested in help with housing for after he gets discharged from the rehabilitation center. He does not have car or another form of transportation.
+
+ Referrals: MCOT provided information about IC and the services offered, including housing and case management, as well as a business card with IC's hotline information.
+
+ Response of the consumer (If appropriate, response of the Accompanying LAR and family members): John was very thankful to MCOT and agreeable to a follow up to learn more about getting connected to IC.
+
+ Disposition/Crisis Plan: MCOT determined that John was at a low risk of harm due to childhood trauma, not being connected to a counselor, and his mother's death, as well as his optimism, resilience, and desire to receive therapeutic support. MCOT provided information about IC and the services offered, including housing and case management, as well as a business card with IC's hotline information. MCOT will follow up to ensure safety and connection to resources.
+
+ Crisis Indicator: Routine
+
+ Recipient Code: Consumer
+
+ Encounter Type: Face to Face
+
+ Appointment Type: Unscheduled Services
+
+ COPSD: No
+
+ What language was the service provided in?: English
+
+ Do you have an Advance Directive or Psychiatric Advance Directive? : Unknown or N/A
+
+ If Unknown or N/A, please explain: Unable to asses due to nature of crisis.
+
+ 
+
+   Electronically Signed by: LILA ELLIS, QMHP - CS
+
+Additional Information:
+
+",True,converse
+9,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the PHQ9, Drug and Alcohol Assessment, Smoking Cessation or Suicide Risk Assessment were documented in the Clinical Quality Indicator section, was there supported documentation in the narrative?"",""LinkId"":""01K5EG2NAGHF42R5VEYGS06G1P""},{""Question"":""Is there documentation of the next appointment, continued goals, or any referrals made?"",""LinkId"":""01K5EG2X5ZS4188P2Z5HNPJWBG""},{""Question"":""Does the documentation reflect changes in client behaviors, mood, engagement or any missed appointments?"",""LinkId"":""01K5EG3717N3EQXCBSFE5WBMSY""},{""Question"":""If the location was \""Telehealth or Phone (Audio Only)\"" was the \""Was this a Telehealth session\"" question answered, yes?"",""LinkId"":""01K5EG3F0FA1W63D6X4D0WNGT9""},{""Question"":""Is the client's response to treatment clearly documented? There should be a client response per intervention mentioned in the narrative."",""LinkId"":""01K5EG3Q1HZ1FBB6Z7S6JD2VD9""},{""Question"":""Is there an explanation of why an intervention was appropriate for that session?"",""LinkId"":""01K5EG3Z277QQWRQ498DSACXYF""},{""Question"":""Does the psychotherapy services selection align with the participants discussed in the narrative?"",""LinkId"":""01K5EG46PVVTP6CTGM6GGJMWZV""},{""Question"":""If risk factors (suicidal ideation, substance use) documented, were they addressed and follow up actions noted? If no risk factors were documented, then treat as success."",""LinkId"":""01K5EG4E1FBD1B5B5BTH8Y1BK4""}]
+
+Progress Note:
+Behavioral Health Services North
+
+  Date Created:  09/30/2025 2:10 PM
+ Form Name:  Psychotherapy Note
+ Client's Name:  LANGLOIS, KAYA (34635)
+ Client's DOB:  08/30/2009
+ 
+
+  Behavioral Health Services North, Inc.
+
+ 22 US Oval Suite 218
+
+ Plattsburgh, NY 12903-5901
+
+ 
+
+ 
+
+  Client:    Name:  KAYA LANGLOIS
+ MRN:  34635
+ Age:  16y
+ Gender:  Female
+ DOB:  08/30/2009
+ 
+
+ 
+ Practitioner:  MELISSA FRASER
+ 
+
+  Location:  Agency Program Site (1)
+ Service Charge Code:  SB Individual Psychotherapy (205)
+ Service Program:  SBMHS - Chazy (2017)
+ myAvatar Note Type:  Outpatient Clinic
+ 
+
+  Draft/Final:  Final
+ Session Date/Time:   09/30/2025 12:05 PM  -  12:30 PM 
+ 
+
+ Psychotherapy Note
+
+  Narrative
+
+ Met with Kaya for session as scheduled. Kaya self-reports that ""things are going well.""
+
+Clinician employed motivational interviewing and supportive therapy throughout session.
+
+ 
+
+  Goals
+
+ Problems-> Depression, unspecified
+Goals-> ""I want to feel better about myself.""
+Objectives-> ""I will stop comparing myself to others and work to build my self-worth.""
+Interventions-> Individual therapy including, but not limited to, CBT, DBT, mindfulness, self-expression, expressive art, emotion identification/communication, strength based, person-centered, solution focused, trauma focused and talk therapy. Individual therapy may employ in person and telehealth formats based on Kaya's preference for the session
+
+ 
+
+  Form
+
+ Psychotherapy Note
+
+ I have verified the client's identity at the start of this encounter.: Yes
+
+ Psychotherapy Services: Individual
+
+ Progress toward goal(s): Kaya presented as alert and oriented x3, pleasant, engaged, calm, and cooperative
+
+Kaya shared updates about school and daily activities, engaging in general conversations. Session was low-key, with no major concerns or new stressors reported.
+
+ Plan/recommended changes to the treatment plan: Continue weekly sessions to support ongoing adjustment and provide space for Kaya to process as needed. 
+
+Clinician will meet with Kaya next week as scheduled.
+
+ Need for Complex Care Management in the next 14 calendar days?: No
+
+ Evidenced Based Practices used: Motivational Interviewing, and Supportive Therapy
+
+ Was this a telehealth session?: No
+
+ Valid Treatment Plan Attestation: By checking this box, I attest that this service is provided in accordance with a current, valid, and finalized treatment plan that is on file, or that the service is provided within 30 days of the client's program admission date and a finalized initial treatment plan is not yet required.
+
+ Was the majority duration of the session spent addressing a MH or SUD diagnosis?: MH
+
+ 
+
+   Electronically Signed by: MELISSA FRASER, LMSW
+
+Additional Information:
+
+",True,converse
+10,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""Was the note completed within 24 hours of the service date?"",""LinkId"":""01K5EG09EK7GCJCGJCZNAZYV6X""},{""Question"":""Was the date and duration of the session completed?"",""LinkId"":""01K5EG0FJNRC9R79XK0MG69XYT""},{""Question"":""Was the service duration less than 360 minutes?"",""LinkId"":""01K5EG0Q184YK4DDCN7TY5QZ48""},{""Question"":""Does the narrative mention the care setting where the session was conducted? It should also correlate with the location documented."",""LinkId"":""01K5EG0YN6V3YY8PAZW40J50WB""},{""Question"":""Was the \""Summary of service(s) provided/Interventions utilized and client responses\"" question completed?"",""LinkId"":""01K5EG16ZNF0XYQEJ4TB1SH1WD""},{""Question"":""Was the selected treatment plan goal and objective supported by the progress towards goals question?"",""LinkId"":""01K5EG1G6Q1Z79XJYPC1VE5BWC""},{""Question"":""Does the note reflect progress towards treatment goals with elaboration of the progress or lack thereof?"",""LinkId"":""01K5EG1QKGWC8AFYSJ241GA34E""},{""Question"":""Are there any recommended changes to the individual's treatment plan in the \""Plan/recommended changes to the treatment plan\"" question?"",""LinkId"":""01K5EG1Z30CFMCKCVHEJC7WX35""},{""Question"":""If someone else was mentioned as present during the session, was family with client or collateral selected? Otherwise, was individual or family without client selected?"",""LinkId"":""01K5EG24XHSJWJARP4P6WQ3RTD""},{""Question"":""Does the duration of the service appear realistic based on the narrative? e.g. At least one intervention and sentence per 10-15 minutes of service."",""LinkId"":""01K5EG2DA4VCPJDHCVT16YWF53""}]
+
+Progress Note:
+Behavioral Health Services North
+
+  Date Created:  09/30/2025 2:10 PM
+ Form Name:  Psychotherapy Note
+ Client's Name:  LANGLOIS, KAYA (34635)
+ Client's DOB:  08/30/2009
+ 
+
+  Behavioral Health Services North, Inc.
+
+ 22 US Oval Suite 218
+
+ Plattsburgh, NY 12903-5901
+
+ 
+
+ 
+
+  Client:    Name:  KAYA LANGLOIS
+ MRN:  34635
+ Age:  16y
+ Gender:  Female
+ DOB:  08/30/2009
+ 
+
+ 
+ Practitioner:  MELISSA FRASER
+ 
+
+  Location:  Agency Program Site (1)
+ Service Charge Code:  SB Individual Psychotherapy (205)
+ Service Program:  SBMHS - Chazy (2017)
+ myAvatar Note Type:  Outpatient Clinic
+ 
+
+  Draft/Final:  Final
+ Session Date/Time:   09/30/2025 12:05 PM  -  12:30 PM 
+ 
+
+ Psychotherapy Note
+
+  Narrative
+
+ Met with Kaya for session as scheduled. Kaya self-reports that ""things are going well.""
+
+Clinician employed motivational interviewing and supportive therapy throughout session.
+
+ 
+
+  Goals
+
+ Problems-> Depression, unspecified
+Goals-> ""I want to feel better about myself.""
+Objectives-> ""I will stop comparing myself to others and work to build my self-worth.""
+Interventions-> Individual therapy including, but not limited to, CBT, DBT, mindfulness, self-expression, expressive art, emotion identification/communication, strength based, person-centered, solution focused, trauma focused and talk therapy. Individual therapy may employ in person and telehealth formats based on Kaya's preference for the session
+
+ 
+
+  Form
+
+ Psychotherapy Note
+
+ I have verified the client's identity at the start of this encounter.: Yes
+
+ Psychotherapy Services: Individual
+
+ Progress toward goal(s): Kaya presented as alert and oriented x3, pleasant, engaged, calm, and cooperative
+
+Kaya shared updates about school and daily activities, engaging in general conversations. Session was low-key, with no major concerns or new stressors reported.
+
+ Plan/recommended changes to the treatment plan: Continue weekly sessions to support ongoing adjustment and provide space for Kaya to process as needed. 
+
+Clinician will meet with Kaya next week as scheduled.
+
+ Need for Complex Care Management in the next 14 calendar days?: No
+
+ Evidenced Based Practices used: Motivational Interviewing, and Supportive Therapy
+
+ Was this a telehealth session?: No
+
+ Valid Treatment Plan Attestation: By checking this box, I attest that this service is provided in accordance with a current, valid, and finalized treatment plan that is on file, or that the service is provided within 30 days of the client's program admission date and a finalized initial treatment plan is not yet required.
+
+ Was the majority duration of the session spent addressing a MH or SUD diagnosis?: MH
+
+ 
+
+   Electronically Signed by: MELISSA FRASER, LMSW
+
+Additional Information:
+
+",True,converse
+11,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""Does the documentation reflect the application of discipline-specific knowledge by the provider?"",""LinkId"":""01K6E0WT3AQJ06GQWTZ7WW532G""},{""Question"":""Does the documentation show provision of a medically necessary, skilled service to address identified outcomes?"",""LinkId"":""01K6E0WT3A039W0PE7S1THN9WJ""},{""Question"":""Does the documentation include caregiver opportunity to demonstrate learning?"",""LinkId"":""01K6E0WT3A2X86P948N21QD6XH""},{""Question"":""Is there documentation of provider engagement with parent/caregiver in joint planning for the current session?"",""LinkId"":""01K6E0WT3AK01DFYD34XYJ6D45""},{""Question"":""Does the documentation show that sessions addressed the parent/caregiver's priorities for services and the child's IFSP outcomes?"",""LinkId"":""01K6E0WT3A4N4CT7V35MNEHNWQ""},{""Question"":""Is there documentation of parent/caregiver reflection on progress since the last session?"",""LinkId"":""01K6E0WT3A4GX0SHSXH57FSAP3""},{""Question"":""Does the documentation show that the provider used routines/activities beyond playtime that engage the child and are part of the child and family's routine?"",""LinkId"":""01K6E0WT3AB1G8P4G2W32MNMND""},{""Question"":""Are credentials correctly documented in all notes based on provider roles?"",""LinkId"":""01K6E0WT3AMSPEFBNS2W9V3NVK""},{""Question"":""Is there documentation of consent for Telehealth Services?"",""LinkId"":""01K6E0WT3AS153X8ACYPTJETKZ""},{""Question"":""Was information provided in the family's native language?"",""LinkId"":""01K6E0WT3AP1EHRF3WW7A7ZNPM""}]
+
+Progress Note:
+MHMR of Tarrant County
+
+  Date Created:  09/30/2025 1:06 PM
+ Form Name:  ECS Progress Note
+ Patient's Name:  LAZUM, JASUTDU (2395421)
+ Patient's DOB:  11/11/2022
+ 
+
+  MHMR of Tarrant County
+
+ P.O. Box 2603
+
+ Fort Worth, TX 76113
+
+ 
+
+ 
+
+  Patient:    Name:  JASUTDU LAZUM
+ MRN:  2395421
+ Age:  2y
+ Gender:  Male
+ DOB:  11/11/2022
+ 
+
+ 
+ Practitioner:  AHSKIA TAYLOR
+ 
+
+  Location:  Home (12)
+ Service Charge Code:  Specialized Skills Training Individual (T1027U1)
+ Service Program:  East 02 (3175)
+ myAvatar Note Type:  ECS Therapeutic Intervention
+ 
+
+  Draft/Final:  Final
+ Session Date/Time:   09/29/2025 11:40 AM  -  12:40 PM 
+ 
+
+ ECS Progress Note
+
+  Narrative
+
+ Date: 9/29/25 
+Time: 11:40-12:40pm
+Location: 5101 BRADDOCK CT, Arlington, TX 76017
+ 
+Who is present?
+Jasutdu, mom, EIS Ahskia 
+
+Joint Plan from previous session for between sessions? 
+Mom will work on imitating 2 words during playtime routines 
+ 
+What has happened since last visit? 
+Mom reported Jasutdu has been doing good, he has a nose bleed last night due to getting hot
+ 
+Joint plan for today's visit?
+Work on imitaiting 2 word phrases 
+ 
+Provider observed? 
+Provider observed Jasutdu was in a happy mood upon arrival, he was watching TV, mom the cut off the TV to transition into visit, Jasutdu transitioned well, he grabbed many toys out if the box to show off
+ 
+Action/Practice? 
+Jasutdu pointed towards various items and named it to EIS demonstrated adding on to the words Jasutdu said to work on imitating 2 words, Jasutdu did showed a star then said ""Star"", EIS then asked ""What color is the star?"", Jasutdu replied ""green"", EIS then reassured him, ""green star"", mom then returned demonstrated naming various toys while adding a word, ""red dice, monster truck"", Jasutdu then imitated ""monster truck"", Jasutdu then wanted to play with a truck, We practiced saying ""Ready, set, go"", Jasutdu imitated each time. The truck then broke in half, Jasutdu became upset by this, he ran to mom and said ""broke"", Jasutdu then ran up to EIS and said ""teacher"", EIS asked ""do you need help"", Jasutdu replied by shaking his head, EIS responded ""yes help"", then proceeded to help Jasutdu fix the toy. Soon after older brother came into the room to ask mom for the TV, Jasutdu then pointed towards the TV and waited for mom to cut it back on, Jasutdu became very upset when mom did not, mom explained bacuase older brother mention the TV this reminded Jasutdu that it was not on, he no longer wanted to engage, EIS attempted to redirect, Jasutdu was not interested
+ 
+Reflection/Feedback? 
+EIS coached mom to continue to add adjustive words to words to work on having Jasutdu to imitate it, EIS suggested to use older brother sometimes to work on 2 word phrases because Jasutdu is more likely to imitate brother 
+ 
+Joint Plan for between sessions? 
+Mom will work on imitation during playtime routines 
+ 
+Joint plan for the next visit? 
+ Work on imitation 
+Next Visit: 10/7/25 at 11:30am
+
+
+ 
+
+  Goals
+
+ Outcome-> JAsutdu will maintain joint attention during play with a familiar adult for 5 minutes without throwing and take turns 4 times a day by third birthday
+
+ 
+
+  Diagnosis
+
+   P   R62.0   Delayed milestone in childhood   
+
+ 
+
+ 
+
+  Form
+
+  ECS Progress Note (Group and Individual)
+
+ Participants Name: Ahskia Taylor, EIS
+Mom
+
+ Next Scheduled Visit: 10/7/25 at 11:30am
+
+ Crisis Indicator: No
+
+ Recipient Code: Consumer and Primary Care Giver
+
+ Encounter Type: Face-to-Face
+
+ Appointment Type: Scheduled/Kept
+
+ Location Name: Home
+
+ Address: 5101 BRADDOCK CT, Arlington, TX 76017
+
+ Credentials: Early Interventionist Specialist
+
+ 
+
+   Electronically Signed by: AHSKIA TAYLOR, Early Interventionist Specialist
+
+Additional Information:
+
+",True,converse
+12,"
+
+Rewrite the text below so be expanded by at least 30%. The text is likely going to be clinical documentation.
+
+Requirements:
+- The writing style should be professional.
+- Only output the rewritten text.
+- Never modify quoted statements.
+- When possible expand known acronyms
+- Do not add details that did not exist in the text.
+- Retain gender specific pronouns (he/she) if they are present
+- The text provided might be very short, so avoid inventing facts or details that were not originally present.
+- If possible, proper case any proper nouns
+- Maintain they/them pronouns if used in the original.
+The patient can be referred to as ""Member"".
+Text to expand:
+The Member struggles with money management. Today, the writer coached and taught the Member budgeting skills while at the grocery store and a pet store. The Member is good about looking for sale items but tends to gravitate towards bulk items. The writer guided and explained to the Member how he does not need excessive bulk items, even though it may be a good deal. The writer emphasized that the Member lives alone and is on a budget; the Member did understand after the writer repeated the reason several times.
+
+",False,converse
+13,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was a The Title of the Curriculum used documented in the note?"",""LinkId"":""01K5J5APGTWFWZA54K34V4DX7V""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if IMR was selected, did the note include a description of the motivational, educational, or cognitive-behavioral strategies, and handouts that were used during the service in a subsequent scrolling free text field?"",""LinkId"":""01K4NVK5YKMZESKFD3YMFQ3FRJ""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if a Skillstreaming or Aggression Replacement Training curriculum was selected, did the note include a definition of the skill, modeling of the skill, a discussion of the individual's need for the skill, role plan, or homework documented in subsequent scrolling free text fields?"",""LinkId"":""01K4NVKCSSAPG14S1MV05TGW8B""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if Seeking Safety curriculum was selected, did the note include a description of the check-in and check-out in subsequent scrolling free text fields?"",""LinkId"":""01K5J5GSRSWMCE10MPRNF3RMB5""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", the note does not include a description of merely accompanying an individual to a social or recreational event or other entertainment or locations to conduct the individual's personal affairs, but relates activities to skills training?"",""LinkId"":""01K4NVKJTM2AA9QFCWFFZ2JGW9""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if a Clinical Quality Indicator other than Not Applicable, was selected, did the note include details that demonstrate all the activities  that were selected?"",""LinkId"":""01K4NVKTYFWAEJ7R0ZEBN2D8BA""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if there is an Electronically Signed by date or an Original Submit DateTime, was the date within two days of the Date of Service, excluding weekends and holidays?"",""LinkId"":""01K4NVM0DN0XKK86XXJYDFE4DM""}]
+
+Progress Note:
+Integral Care
+
+Date Created 09/30/2025 2:30 PM
+Form Name GIRPP Progress Note (CWSPN22005)
+Individual's Name EVANS, DAVE, T (623215)
+Individual's DOB 04/18/1972
+
+Integral Care
+
+Travis County
+
+Texas
+
+
+Bells Notes
+
+Individual Name DAVE T EVANS
+MRN 623215
+Age 53y
+Gender Male
+DOB 04/18/1972
+Practitioner DOVE WREN
+
+Location Clinic/Office (11)
+Service Charge Code Living Skills Training - Indiv (1236)
+Service Program 5791-Community First Village-LOC 1 (5791)
+myAvatar Note Type Adult Behavioral Health
+
+Draft/Final Final
+Progress Note For New Service
+Visit Date/Time 09/30/2025 12:00 PM - 1:20 PM
+
+GIRPP Progress Note (CWSPN22005)
+
+Visit Time
+
+* Service Start  12:00 PM  Service Stop  1:20 PM  Service Duration  01:20  
+
+
+Treatment Plan
+
+* Dave is diagnosed with Major depressive disorder, recurrent episode, severe. Dave reports struggling with depressed mood frequently and reports a desire to try and resolve this.
+  * [Active] - Dave stated his goals are: ""I need to get a new doctor, renew my SNAP and MAP benefits together, look for permanent housing, and work on my mental health."" Dave has identified several important goals to support his overall well-being. His primary objective is to establish care with a new primary care provider. In addition, Dave would like assistance with renewing his SNAP and MAP benefits. He has also expressed a desire to find secure, permanent housing and to focus on improving his mental health.
+    * [Active] - Over the next 180 days, Dave will take several steps to work toward his identified goals. He will prioritize his health by establishing care with a new PCP to address his ongoing medical needs. To maintain access to essential services, Dave will recertify his SNAP benefits by submitting an online application through the hhs.texas.gov website and will also complete and submit a MAP renewal application along with all required documentation. In pursuit of stable housing, Dave will tour properties under the section 811 program. Dave will work closely with his OSCDT treatment team to gather and submit all required supportive documents, including verification of funding sources.  Additionally, Dave will focus on improving his mental health by engaging in services and supports identified in collaboration with his treatment team.
+      * [Active] - Living Skills Training - Service Charge Code: 1236
+Possible Provider Credentials: CSSP, LPHA, PEERPROV, QMHP-CS, QMPH-R Appropriate provider will provide skills training, in-person, through synchronous audio-visual technology and/or through synchronous audio-only telephone technology, that may include the following DSHS approved curriculums:
+IMR, Seeking Safety. Skills may include but not limited to: 
+Assertiveness, Social, and General Problem Solving, Relaxation, Anger Management, Understand and Express Feelings, Coping Self -Talk (Helpful Thinking). Individualized services will be provided based on need.
+
+
+QMHP met face to face with Dave at the Integral Care Health Resource Center located at Community First! Village for living skills training in service of his stated goal of ""I need to talk to Molly.""
+
+GIRPP Progress Note
+
+Title of Curriculum Used: imr
+
+IMR Curriculum: topic 08: coping with stress, topic 08a: relaxation techniques, and topic 10: getting your needs met by the mental health system
+
+
+
+GIRPP Note Narratives
+
+
+Intervention: QMHP provided empathic and reflective listening to support DAVE as he described anger and frustration connected to being informed that he is not able to see Molly Baker, LPHA with the Community First! Village Integral Care (IC) treatment team. QMHP reviewed stress coping skills with Dave and reminded him that talking about his stress and utilizing relaxation techniques were two effective coping skills to help reduce stress and mental health symptoms (IMR Topic 08). QMHP recommended Dave practice deep breathing to help relax, so he could more effectively communicate his needs to QMHP and the medical providers at Community Care (IMR Topic 08a). QMHP modeled deep breathing and encouraged Dave to join the practice (IMR Topic 08a). QMHP commended Dave for utilizing positive self talk as a stress coping skills (IMR Topic 08). QMHP and Dave discussed ways he can get his need for a therapist met including: discussing his options with his case managers and preparing by listing out the important qualities that he is looking for in a therapist (IMR Topic 10). 
+
+Response: Dave presented appearing emotionally labile and disorganized. Dave alternated between angry outbursts and crying and stated ""I don't want to come undone."" Dave engaged with QMHP in deep breathing and stated ""I'm going to take 72 deep breaths."" Dave stated ""I can get through this, I don't want to come undone."" Dave reported wanting a therapist that ""gets him and what he went through"" and ""someone who can give me an amnesia pill."" Dave appeared more emotionally stable and organized by the end of the meeting. Dave stated ""I am reaching out for help and thank you, thank you. Are you on Haleigh's team? She helps me a lot."" 
+
+Progress: Dave demonstrated progress towards his stated goal by participating in relaxation technique practice and utilizing stress coping skills to reduce stress and mental health symptoms enough to discuss ways he can get his needs met by the mental health symptom and find a therapist to support him in the way he needs. 
+
+Referrals: No referrals at this time. 
+
+Plan/Future Actions: Dave will follow up with his case managers, Haleigh Rasco and Jakori Tinsley. Dave will meet with Jakori today at 2:30 pm and will meet Haleight on 10/2/25. QMHP will report details of this meeting to Dave's care team. 
+
+Crisis Indicator: urgent
+
+Recipient Code: consumer
+
+Encounter Type: face to face
+
+Appointment Type: unscheduled services
+
+COPSD: no
+
+Collateral Contact Made: no
+
+
+
+Additional Details
+
+
+What language was the service provided in?: english
+
+Did this intervention occur as part of the client's ongoing suicide care pathway?: n/a
+
+Suicide care interventions (can be provided to any client regardless of pathway enrollment status) : na
+
+Was a caring contact card sent? (e.g. when a client misses an appointment, declines care, or anytime when clinically appropriate.): n/a
+
+Was education regarding the suicide care pathway (e.g., flyer or verbale explanation) provided during this encounter?: n/a
+
+Clinical Quality Indicator
+
+* S1 Not Applicable 
+
+Electronically Signed by: DOVE WREN, QMHP - CS on 09/30/2025 3:10 PM
+
+Additional Information:
+
+",True,converse
+14,"Return the result in a JSON array formatted as follows:
+[{
+  ""linkId"": ""question identifier"",
+  ""result"": ""response with one of the following options Satisfied|NotSatisfied|NotApplicable"",
+  ""evidence"": ""how was the answer determined"",
+  ""confidence"": ""confidence level (0-100) of the answer""
+}]
+
+Throughout your response, ensure the following:
+- Don't include any text before or after the summary.
+- Do not provide generic examples. Use exact text from the progress note.
+- Each question should have its own entry in the JSON array
+- If you don't know something or aren't sure about what something means, don't make any assumptions.
+- If the criteria of the question does not apply, the result should be NotApplicable
+- Ensure the result aligns with the evidence. They should not contradict themselves
+
+
+Given the following Progress Note, answer the questions below.
+
+Questions:
+[{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the Treatment Plan question as well as questions related to Curriculum, was training provided to the client that addresses symptom-related problems, or provided opportunities for the client to acquire or improve skills?"",""LinkId"":""01K4NVGQQ24THBZKAFAZ5MQ2B7""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was a Goal or Objective selected in the, \""Note Addresses Which Treatment Plan Problem\"" field?"",""LinkId"":""01K5J3NGPTZNZ61TK48BR72DK0""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was the Goal or Objective selected in the Note Addresses Which Treatment Plan Problem field supported by the narrative in the scrolling free text Goal field?"",""LinkId"":""01K4NVH3MMTGK93QPAQMMGVPF0""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was the narrative in the scrolling free text Intervention field related to the narrative in the scrolling free text goal field?"",""LinkId"":""01K5J3VPHPM2WQFCW9YMESPF73""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", was the progress or lack of progress documented in a scrolling free text field related to the Goal or Objective selected in the Note Addresses Which Treatment Plan Problem field?"",""LinkId"":""01K4NVHHWV01BTY40821QP7310""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telephone or Telephone Call Back, did the selected Location include Telephone?"",""LinkId"":""01K4NVHWPDMFCBH084JCF56R9W""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and if the encounter type selected was Telemedicine, did the selected Location include Telemedicine?"",""LinkId"":""01K4NVJ38NV0FM7JTG5VZVYAQ9""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did the documentation in the scrolling free text fields align with the selected Encounter Type?"",""LinkId"":""01K4NVJG33V1F5EK2K8Z2FWF2Q""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", did any scrolling free text fields include a client quote, or their perspective on the service delivered (not applicable if client is non-verbal or unable to speak)?"",""LinkId"":""01K4NVJNS7APNV9XBXNC3Z88SH""},{""Question"":""If the Appointment Type section includes \""Scheduled\"" or \""Unscheduled\"", and excluding the \""Selected Treatment Plan\"" question, was the Client’s name used in scrolling free text fields?"",""LinkId"":""01K4NVK0KV5B32DJGXJ2CGA85E""}]
+
+Progress Note:
+Integral Care
+
+Date Created 09/30/2025 2:30 PM
+Form Name GIRPP Progress Note (CWSPN22005)
+Individual's Name EVANS, DAVE, T (623215)
+Individual's DOB 04/18/1972
+
+Integral Care
+
+Travis County
+
+Texas
+
+
+Bells Notes
+
+Individual Name DAVE T EVANS
+MRN 623215
+Age 53y
+Gender Male
+DOB 04/18/1972
+Practitioner DOVE WREN
+
+Location Clinic/Office (11)
+Service Charge Code Living Skills Training - Indiv (1236)
+Service Program 5791-Community First Village-LOC 1 (5791)
+myAvatar Note Type Adult Behavioral Health
+
+Draft/Final Final
+Progress Note For New Service
+Visit Date/Time 09/30/2025 12:00 PM - 1:20 PM
+
+GIRPP Progress Note (CWSPN22005)
+
+Visit Time
+
+* Service Start  12:00 PM  Service Stop  1:20 PM  Service Duration  01:20  
+
+
+Treatment Plan
+
+* Dave is diagnosed with Major depressive disorder, recurrent episode, severe. Dave reports struggling with depressed mood frequently and reports a desire to try and resolve this.
+  * [Active] - Dave stated his goals are: ""I need to get a new doctor, renew my SNAP and MAP benefits together, look for permanent housing, and work on my mental health."" Dave has identified several important goals to support his overall well-being. His primary objective is to establish care with a new primary care provider. In addition, Dave would like assistance with renewing his SNAP and MAP benefits. He has also expressed a desire to find secure, permanent housing and to focus on improving his mental health.
+    * [Active] - Over the next 180 days, Dave will take several steps to work toward his identified goals. He will prioritize his health by establishing care with a new PCP to address his ongoing medical needs. To maintain access to essential services, Dave will recertify his SNAP benefits by submitting an online application through the hhs.texas.gov website and will also complete and submit a MAP renewal application along with all required documentation. In pursuit of stable housing, Dave will tour properties under the section 811 program. Dave will work closely with his OSCDT treatment team to gather and submit all required supportive documents, including verification of funding sources.  Additionally, Dave will focus on improving his mental health by engaging in services and supports identified in collaboration with his treatment team.
+      * [Active] - Living Skills Training - Service Charge Code: 1236
+Possible Provider Credentials: CSSP, LPHA, PEERPROV, QMHP-CS, QMPH-R Appropriate provider will provide skills training, in-person, through synchronous audio-visual technology and/or through synchronous audio-only telephone technology, that may include the following DSHS approved curriculums:
+IMR, Seeking Safety. Skills may include but not limited to: 
+Assertiveness, Social, and General Problem Solving, Relaxation, Anger Management, Understand and Express Feelings, Coping Self -Talk (Helpful Thinking). Individualized services will be provided based on need.
+
+
+QMHP met face to face with Dave at the Integral Care Health Resource Center located at Community First! Village for living skills training in service of his stated goal of ""I need to talk to Molly.""
+
+GIRPP Progress Note
+
+Title of Curriculum Used: imr
+
+IMR Curriculum: topic 08: coping with stress, topic 08a: relaxation techniques, and topic 10: getting your needs met by the mental health system
+
+
+
+GIRPP Note Narratives
+
+
+Intervention: QMHP provided empathic and reflective listening to support DAVE as he described anger and frustration connected to being informed that he is not able to see Molly Baker, LPHA with the Community First! Village Integral Care (IC) treatment team. QMHP reviewed stress coping skills with Dave and reminded him that talking about his stress and utilizing relaxation techniques were two effective coping skills to help reduce stress and mental health symptoms (IMR Topic 08). QMHP recommended Dave practice deep breathing to help relax, so he could more effectively communicate his needs to QMHP and the medical providers at Community Care (IMR Topic 08a). QMHP modeled deep breathing and encouraged Dave to join the practice (IMR Topic 08a). QMHP commended Dave for utilizing positive self talk as a stress coping skills (IMR Topic 08). QMHP and Dave discussed ways he can get his need for a therapist met including: discussing his options with his case managers and preparing by listing out the important qualities that he is looking for in a therapist (IMR Topic 10). 
+
+Response: Dave presented appearing emotionally labile and disorganized. Dave alternated between angry outbursts and crying and stated ""I don't want to come undone."" Dave engaged with QMHP in deep breathing and stated ""I'm going to take 72 deep breaths."" Dave stated ""I can get through this, I don't want to come undone."" Dave reported wanting a therapist that ""gets him and what he went through"" and ""someone who can give me an amnesia pill."" Dave appeared more emotionally stable and organized by the end of the meeting. Dave stated ""I am reaching out for help and thank you, thank you. Are you on Haleigh's team? She helps me a lot."" 
+
+Progress: Dave demonstrated progress towards his stated goal by participating in relaxation technique practice and utilizing stress coping skills to reduce stress and mental health symptoms enough to discuss ways he can get his needs met by the mental health symptom and find a therapist to support him in the way he needs. 
+
+Referrals: No referrals at this time. 
+
+Plan/Future Actions: Dave will follow up with his case managers, Haleigh Rasco and Jakori Tinsley. Dave will meet with Jakori today at 2:30 pm and will meet Haleight on 10/2/25. QMHP will report details of this meeting to Dave's care team. 
+
+Crisis Indicator: urgent
+
+Recipient Code: consumer
+
+Encounter Type: face to face
+
+Appointment Type: unscheduled services
+
+COPSD: no
+
+Collateral Contact Made: no
+
+
+
+Additional Details
+
+
+What language was the service provided in?: english
+
+Did this intervention occur as part of the client's ongoing suicide care pathway?: n/a
+
+Suicide care interventions (can be provided to any client regardless of pathway enrollment status) : na
+
+Was a caring contact card sent? (e.g. when a client misses an appointment, declines care, or anytime when clinically appropriate.): n/a
+
+Was education regarding the suicide care pathway (e.g., flyer or verbale explanation) provided during this encounter?: n/a
+
+Clinical Quality Indicator
+
+* S1 Not Applicable 
+
+Electronically Signed by: DOVE WREN, QMHP - CS on 09/30/2025 3:10 PM
+
+Additional Information:
+
+",True,converse
+15,"
+Given the text below, reply with the text rewritten with improved grammar and structure of the content. The text is likely going to be clinical documentation.
+
+Requirements:
+- The writing style should be professional
+- Only output the rewritten text
+- Never modify quoted statements
+- When possible expand known acronyms
+- Retain gender specific pronouns (he/she) if they are present
+- Do not add details that did not exist in the text.  If the text is very short, only improve the grammar if possible
+- If the text cannot be improved or is too short to be improved, then just reply with the same text
+- If possible, proper case any proper nouns
+- Maintain they/them pronouns if used in the original
+The patient can be referred to as ""Member"".
+Text to rewrite:
+This writer and the Member's grandmother reviewed his struggles over the past month, including his responsibilities and chores. The Member transitioned to Benson Digital and has since shown improvement, managing no more than two subjects at a time. He has been earning As and Bs and received $20 for each. The Member was able to have a friend over to play games and demonstrated the ability to cook simple meals. However, lying has again been reported as an issue. The Member has also been spending time with his dad daily. Communication, emotional regulation, anxiety has been flaring.
+
+",False,converse
+16,"
+Given the text below, reply with the text rewritten with improved grammar and structure of the content. The text is likely going to be clinical documentation.
+
+Requirements:
+- The writing style should be professional
+- Only output the rewritten text
+- Never modify quoted statements
+- When possible expand known acronyms
+- Retain gender specific pronouns (he/she) if they are present
+- Do not add details that did not exist in the text.  If the text is very short, only improve the grammar if possible
+- If the text cannot be improved or is too short to be improved, then just reply with the same text
+- If possible, proper case any proper nouns
+- Maintain they/them pronouns if used in the original
+The patient should be referred to by their name ""LEON"".
+Text to rewrite:
+Leon is supervised by staff to make sure he does not have any incidents with walking or seizure like activities. Leon has been doing well with the seizures staff has not seen one yet with him as Leon takes all of is required medications on time with support from staff and falls are not ever seen either with staff there to hold Leon up while walking and protecting him from any falls or incidents.
+
+",False,converse

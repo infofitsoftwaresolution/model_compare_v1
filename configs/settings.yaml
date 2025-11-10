@@ -1,0 +1,7 @@
+region_name: us-east-1
+output_dir: data/runs
+use_sqlite: false
+cache_enabled: true
+concurrency: 4
+logging_level: INFO
+

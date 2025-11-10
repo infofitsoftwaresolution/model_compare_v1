@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Data files (keep structure but ignore generated data)
+data/runs/*.csv
+data/runs/*.json
+data/*.json
+data/*.csv
+!data/runs/.gitkeep
+
+# CloudWatch log files (can be large)
+*.jsonl
+cloudwatch_logs_*.jsonl
+
+# Results directory (command-line evaluation outputs)
+results/
+
+# Logs
+*.log
+logs/
+
+# AWS
+.aws/
+
+# Environment variables
+.env
+.env.local
+
+# Config files with credentials (if you have a local config override)
+config.local.py
+config.override.py
+
+# Test files
+test_*.py
+*_test.py
+
+# Temporary files
+*.tmp
+*.bak
+*~
